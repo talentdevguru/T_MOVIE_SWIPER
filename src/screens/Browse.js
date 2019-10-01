@@ -123,7 +123,7 @@ class Browse extends React.Component {
     renderBrowseSections() {
         const { sectionsMovies } = this.state;
         const keyExtractor = section => section.title;
-        //define the f
+        //define the fu
         return (
             <FlatList 
                 data={BROWSE_SECTIONS}
