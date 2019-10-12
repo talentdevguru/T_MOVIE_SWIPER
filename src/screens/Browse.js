@@ -123,7 +123,7 @@ class Browse extends React.Component {
     renderBrowseSections() {
         const { sectionsMovies } = this.state;
         const keyExtractor = section => section.title;
-
+        //define return function
         return (
             <FlatList 
                 data={BROWSE_SECTIONS}
@@ -154,7 +154,7 @@ class Browse extends React.Component {
                     onChangeText={this.onSearchTextChange}
                     onDelayedInput={this.onDelayedInput}
                 />
-
+                
                 <View style={styles.bottomContainer} {...this.panResponder.panHandlers}>
                     {this.renderBrowseSections()}
                     {isSearchBlockFocused && (
