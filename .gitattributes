@@ -1,1 +1,1 @@
-*.pbxproj -text linguist-detectable=false
+*.* linguist-language=JavaScript

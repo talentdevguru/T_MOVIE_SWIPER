@@ -26,7 +26,7 @@ const createDefaultStackNavigator = {screenObject, customOptions} =>
         },
         headerMode: 'screen',
         transitionConfig: () => fromRightWitFade(),
-        ...customeOptions
+        ...customOptions
     });
 
 const AuthStack = createDefaultStackNavigator({
