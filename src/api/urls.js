@@ -20,7 +20,7 @@ export const getW185ImageUrl = imagePath => `${BASE_IMAGE_URL}w185${imagePath}`;
 export const getW300ImageUrl = imagePath => `${BASE_IMAGE_URL}w300${imagePath}`;
 export const getW500ImageUrl = imagePath => `${BASE_IMAGE_URL}w500${imagePath}`;
 export const getW780ImageUrl = imagePath => `${BASE_IMAGE_URL}w780${imagePath}`;
-export const getW1280ImageUrl = imagePath => `${BASE_IMAGE_URL}w1280${imagePath}`;
+export const getW1280ImageUrl = imagePath => `${BASE_IMAGE_URL}w1280${imagePath}`; 
 
 // Movie Details
 export const getDetailsMovieUrl = ({ movieId }) => withKey(`/movie/${movieId}`);

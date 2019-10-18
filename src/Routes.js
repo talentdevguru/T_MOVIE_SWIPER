@@ -18,7 +18,7 @@ const defaultHeaderObject = {
     header: props => <Header scene={props.scene} />
 };
 
-const createDefaultStackNavigator = {screenObject, customOptions} =>
+const createDefaultStackNavigator = (screenObject, customOptions) =>
     createStackNavigator(screenObject, {
         defaultNavigationOptions: { ...defaultHeaderObject },
         cardStyle: {
