@@ -33,12 +33,11 @@ import RouteNames from './RouteNames';
 //     [RouteNames.AuthWelcome]: { screen: AuthWelcome },
 //     [RouteNames.AuthLogin]: { screen: AuthLogin }
 // })
-
+console.log("Routes.js");
 export const RootStack = createAppContainer(
     
-    {[RouteNames.Splash]: { screen: Splash }}
-    // createSwitchNavigator({
-        
+    createSwitchNavigator({
+        [RouteNames.Splash]: { screen: Splash },
         // [RouteNames.AuthStack]: { screen: AuthStack }
-    // })
+    })
 );

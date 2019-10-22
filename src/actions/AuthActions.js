@@ -1,45 +1,76 @@
-import { AsyncStorage } from 'react-native';
-import { getCurrentUsersAccountId } from '../utils/store';
+import { Auth } from './types';
+import { validateUsername, validatePassword } from '../utils/validators';
+import { stSaveUser, stRemoveUser, stRemoveCurrentMovies } from '../utils/storage';
+import { requestToCreateNewGuestUser, requestToCreateNewAuthenticatedUser } from '../api/auth';
+import { getTmdbErrorMessage } from '../api/codes';
+import RouteNames from '../RouteNames';
+import Config from '../Config';
 
-// User
-const stUserKey = 'user';
-export const stGetUser = () =>
-  getJsonObjectFromStorage(stUserKey, { onJsonParseError: stRemoveUser });
-export const stSaveUser = user => AsyncStorage.setItem(stUserKey, JSON.stringify(user));
-export const stRemoveUser = () => AsyncStorage.removeItem(stUserKey);
+export const clearLoginFields = () => ({ type: Auth.CLEAR_LOGIN_FIELDS });
+export const loadUserIntoRedux = user => ({ type: Auth.USER_LOADED, payload: user });
+export const loginUsernameChanged = text => ({ type: Auth.USERNAME_CHANGED, payload: text });
+export const loginPasswordChanged = text => ({ type: Auth.PASSWORD_CHANGED, payload: text });
 
-// Current movies
-const stCurrentMoviesKey = 'currentMovies';
-export const stGetCurrentMovies = () => getJsonObjectFromStorage(stCurrentMoviesKey);
-export const stSaveCurrentMovies = movies =>
-  AsyncStorage.setItem(stCurrentMoviesKey, JSON.stringify(movies));
-export const stRemoveCurrentMovies = () => AsyncStorage.removeItem(stCurrentMoviesKey);
+export const logOutUser = navigation => dispatch => {
+  stRemoveUser();
+  stRemoveCurrentMovies();
+  navigation.navigate(RouteNames.AuthStack);
+  dispatch({ type: Auth.LOG_OUT });
+};
 
-// Requests
-const stRequestsKey = 'requests';
-export const stGetRequests = () => getJsonObjectFromStorage(stRequestsKey);
-export const stSaveRequests = requests =>
-  AsyncStorage.setItem(stRequestsKey, JSON.stringify(requests));
+export const createGuestSession = ({ showToast, onSuccess }) => async dispatch => {
+  dispatch({ type: Auth.CREATE_GUEST_SESSION_ATTEMPT });
 
-// Explore movies
-const getExploredMoviesKey = () => `user:${getCurrentUsersAccountId()}:explored`;
-export const stGetExploredMovies = () => getJsonObjectFromStorage(getExploredMoviesKey());
-export const stSaveExploredMovies = movies =>
-  AsyncStorage.setItem(getExploredMoviesKey(), JSON.stringify(movies));
+  try {
+    const { sessionId } = await requestToCreateNewGuestUser();
+
+    dispatch({ type: Auth.CREATE_GUEST_SESSION_SUCCESS, payload: createUser({ sessionId }) });
+    onSuccess();
+  } catch (error) {
+    showToast && showToast('Something went wrong. Please try again later.');
+    dispatch({ type: Auth.CREATE_GUEST_SESSION_FAIL });
+  }
+};
+
+export const loginUser = ({ username, password, showToast, onSuccess }) => async dispatch => {
+  const usernameValidator = validateUsername(username);
+  const passwordValidator = validatePassword(password);
+  const isValidCredentials = usernameValidator.isValid && passwordValidator.isValid;
+
+  if (!isValidCredentials) {
+    dispatch({ type: Auth.USERNAME_INCORRECT, payload: usernameValidator.message });
+    dispatch({ type: Auth.PASSWORD_INCORRECT, payload: passwordValidator.message });
+    return;
+  }
+
+  dispatch({ type: Auth.LOGIN_USER_ATTEMPT });
+
+  try {
+    const { accountId, sessionId } = await requestToCreateNewAuthenticatedUser({
+      username,
+      password
+    });
+
+    dispatch({
+      type: Auth.LOGIN_USER_SUCCESS,
+      payload: createUser({ accountId, username, sessionId })
+    });
+    onSuccess();
+  } catch (error) {
+    const isUnauthorized = error.response && error.response.status === 401;
+    if (!isUnauthorized && showToast) {
+      showToast('Something went wrong. Please try again later.');
+    }
+    const errMessage = isUnauthorized ? getTmdbErrorMessage(error.response.data.status_code) : '';
+    dispatch({ type: Auth.LOGIN_USER_FAIL, payload: errMessage });
+  }
+};
 
 // Local functions
-const getJsonObjectFromStorage = (key, params = {}) =>
-  new Promise(async resolve => {
-    const { onJsonParseError } = params;
-
-    try {
-      const dataJson = await AsyncStorage.getItem(key);
-      if (!dataJson) resolve(null);
-
-      const data = JSON.parse(dataJson);
-      resolve(data);
-    } catch (e) {
-      onJsonParseError && onJsonParseError();
-      resolve(null);
-    }
-  });
+const createUser = ({ accountId, sessionId, username }) => {
+  const isGuest = !accountId;
+  const user = { isGuest, sessionId, accountId, username };
+  Config.logGeneral && console.log('Creating user: ', user);
+  stSaveUser(user);
+  return user;
+};

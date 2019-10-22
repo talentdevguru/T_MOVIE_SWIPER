@@ -10,7 +10,7 @@ const INITIAL_STATE = {
   user: null
 };
 
-export default (state = INITIAL_STATE, action) => {
+const AuthReducers = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case Auth.USERNAME_CHANGED:
       return { ...state, loginUsernameError: '', loginUsername: action.payload };
@@ -53,3 +53,5 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state };
   }
 };
+
+export default AuthReducers;
