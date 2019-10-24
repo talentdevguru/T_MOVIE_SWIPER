@@ -33,9 +33,8 @@ import RouteNames from './RouteNames';
 //     [RouteNames.AuthWelcome]: { screen: AuthWelcome },
 //     [RouteNames.AuthLogin]: { screen: AuthLogin }
 // })
-console.log("Routes.js");
-export const RootStack = createAppContainer(
-    
+
+export const RootStack = createAppContainer(   
     createSwitchNavigator({
         [RouteNames.Splash]: { screen: Splash },
         // [RouteNames.AuthStack]: { screen: AuthStack }

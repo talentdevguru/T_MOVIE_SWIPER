@@ -10,45 +10,51 @@ import Theme from '../Theme';
 
 class Splash extends React.Component {
     componentDidMount() {
-        this.configureLayoutAnimation();
-        this.configureAxios();
-        this.loadUser();
+        console.log("Splash_componentdidmount.js");
+        // this.configureLayoutAnimation();
+        // this.configureAxios();
+        // this.loadUser();
     }
 
-    configureLayoutAnimation() {
-        if (Config.isAndroid) {
-            UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
-        }
+    componentWillMount() {
+        console.log("Splash_componentwillmount.js");
     }
 
-    configureAxios() {
-        const { navigation, logOutUser } = this.props;
+    // configureLayoutAnimation() {
+    //     if (Config.isAndroid) {
+    //         UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
+    //     }
+    // }
 
-        axios.interceptors.response.use(
-            response => response,
-            error => {
-                if (error.response && error.response.status === 401) {
-                    Config.logGeneral && console.log('Unauthorized request, logging out ...');
-                    logOutUser(navigation);
-                }
-                return Promise.reject(error);
-            }
-        )
-    }
+    // configureAxios() {
+    //     const { navigation, logOutUser } = this.props;
 
-    loadUser = async () => {
-        const { navigation, loadUserIntoRedux } = this.props;
-        const user = await stGetUser();
+    //     axios.interceptors.response.use(
+    //         response => response,
+    //         error => {
+    //             if (error.response && error.response.status === 401) {
+    //                 Config.logGeneral && console.log('Unauthorized request, logging out ...');
+    //                 logOutUser(navigation);
+    //             }
+    //             return Promise.reject(error);
+    //         }
+    //     )
+    // }
+
+    // loadUser = async () => {
+    //     const { navigation, loadUserIntoRedux } = this.props;
+    //     const user = await stGetUser();
     
-        if (user) {
-          loadUserIntoRedux(user);
-          navigation.navigate(RouteNames.HomeStack);
-        } else {
-          navigation.navigate(RouteNames.AuthStack);
-        }
-    };
+    //     if (user) {
+    //       loadUserIntoRedux(user);
+    //       navigation.navigate(RouteNames.HomeStack);
+    //     } else {
+    //       navigation.navigate(RouteNames.AuthStack);
+    //     }
+    // };
 
     render() {
+        console.log("Splash.js");
         return <View style={styles.container} />;
     }
 }

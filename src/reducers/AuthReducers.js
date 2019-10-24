@@ -11,6 +11,7 @@ const INITIAL_STATE = {
 };
 
 const AuthReducers = (state = INITIAL_STATE, action) => {
+  console.log("AuthReducers.js");
   switch (action.type) {
     case Auth.USERNAME_CHANGED:
       return { ...state, loginUsernameError: '', loginUsername: action.payload };
