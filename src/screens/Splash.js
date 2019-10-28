@@ -44,7 +44,7 @@ class Splash extends React.Component {
           loadUserIntoRedux(user);
           navigation.navigate(RouteNames.HomeStack);
         } else {
-        //   navigation.navigate(RouteNames.AuthStack);
+          navigation.navigate(RouteNames.AuthStack);
         }
     };
 

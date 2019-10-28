@@ -6,7 +6,6 @@ const withDelayedLoading = WrappedComponent => {
     state = { toShowComponent: false };
 
     componentDidMount() {
-      // eslint-disable-next-line
       requestAnimationFrame(() => this.setState({ toShowComponent: true }));
     }
 

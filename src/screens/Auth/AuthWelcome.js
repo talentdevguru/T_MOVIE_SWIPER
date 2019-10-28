@@ -47,7 +47,7 @@ class AuthWelcome extends React.Component {
   render() {
       
     const { isGuestSessionCreating } = this.props;
-    console.log("AuthWelcome.js");
+    console.log("AuthWelcome.js: "+this.props.length);
     return (
       <View style={styles.container}>
         <ImageOpacityCycler style={StyleSheet.absoluteFill} images={WELCOME_IMAGES} />
