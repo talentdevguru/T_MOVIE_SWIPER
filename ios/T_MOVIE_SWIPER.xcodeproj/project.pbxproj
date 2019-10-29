@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* T_MOVIE_SWIPERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* T_MOVIE_SWIPERTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -20,6 +19,9 @@
 		ED3E317EB7535DDF3ABA1035 /* libPods-T_MOVIE_SWIPER-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6838EA25FFD3624FCBD044 /* libPods-T_MOVIE_SWIPER-tvOSTests.a */; };
 		EE3766F0B53AC1B76DADCA20 /* libPods-T_MOVIE_SWIPER.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E32791B4BE60230006C59A /* libPods-T_MOVIE_SWIPER.a */; };
 		F7EDB8941D5B6AA36FA77387 /* libPods-T_MOVIE_SWIPERTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC2445838C1C13EF285D2C5 /* libPods-T_MOVIE_SWIPERTests.a */; };
+		B22F078096A942BD9B0D672C /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */; };
+		1BBD942089A3431B9332456C /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */; };
+		99732EC522CD484D926DC11E /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F6E32791B4BE60230006C59A /* libPods-T_MOVIE_SWIPER.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-T_MOVIE_SWIPER.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../src/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../src/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +185,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				669E9A1B40073E9F045539C6 /* Pods */,
+				6140CF8B63FC49798790B457 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -196,6 +202,17 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		6140CF8B63FC49798790B457 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */,
+				91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */,
+				705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -285,7 +302,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -343,6 +360,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				B22F078096A942BD9B0D672C /* Raleway-Bold.ttf in Resources */,
+				1BBD942089A3431B9332456C /* Raleway-Regular.ttf in Resources */,
+				99732EC522CD484D926DC11E /* Raleway-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +396,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
