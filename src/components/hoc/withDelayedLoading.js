@@ -11,6 +11,7 @@ const withDelayedLoading = WrappedComponent => {
 
     render() {
       const { toShowComponent } = this.state;
+      console.log("withDelayedLoading: "+this.props.isGuestSessionCreating)
       return toShowComponent && <WrappedComponent {...this.props} />;
     }
   }
