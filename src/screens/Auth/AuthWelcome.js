@@ -47,7 +47,6 @@ class AuthWelcome extends React.Component {
   render() {
       
     const { isGuestSessionCreating } = this.props;
-    const { loginIsLoading } = this.props;
     console.log("AuthWelcome.js: "+this.props.loginIsLoading);
     return (
       <View style={styles.container}>
