@@ -54,12 +54,12 @@ const BottomTabs = createBottomTabNavigator(
         },
         [TabNames.explore]: {
             screen: createDefaultStackNavigator({
-                Explore
+                Browse
             })
         },
         [TabNames.library]: {
             screen: createDefaultStackNavigator({
-                Library
+                Browse
             })
         }
     },
