@@ -33,7 +33,7 @@ const createDefaultStackNavigator = (screenObject, customOptions) =>
 
 const AuthStack = createDefaultStackNavigator({
     [RouteNames.AuthWelcome]: { screen: AuthWelcome },
-    [RouteNames.AuthLogin]: { screen: AuthWelcome }
+    [RouteNames.AuthLogin]: { screen: AuthLogin }
 })
 
 export const RootStack = createAppContainer(   
