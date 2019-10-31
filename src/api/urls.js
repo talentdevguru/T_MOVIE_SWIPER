@@ -1,7 +1,7 @@
 export const REGISTRATION_URL = 'https://www.themoviedb.org/account/signup';
 export const RESET_PASSWORD_URL = 'https://www.themoviedb.org/account/reset-password';
 
-export const API_KEY = '16920a1e34e3b08e3a720c33cfc1341c';
+export const API_KEY = '6c65fa485f67b2993f27014be08b537d';
 export const ROOT_URL = 'https://api.themoviedb.org/3';
 const withKey = url => `${ROOT_URL}${url}?api_key=${API_KEY}`;
 
