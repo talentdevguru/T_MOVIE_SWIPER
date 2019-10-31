@@ -44,7 +44,7 @@ const createDefaultStackNavigator = (screenObject, customOptions) =>
         ...customOptions
     });
 
-//Navigations
+// Navigation
 const BottomTabs = createBottomTabNavigator(
     {
         [TabNames.browse]: {
