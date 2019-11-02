@@ -4,8 +4,8 @@ import { withNavigationFocus } from 'react-navigation';
 import { View, FlatList, StyleSheet, PanResponder } from 'react-native';
 import SearchBlock from '../components/SearchBlock';
 import MoviesHorizontalScroll from '../components/MovieComponents/MoviesHorizontalScroll';
-import MoviesSearchResults from '../components/MoviesComponents/MoviesSearchResults';
-import withRefetch from '../components/withRefetch';
+import MoviesSearchResults from '../components/MovieComponents/MovieSearchResults';
+import withRefetch from '../components/hoc/withRefetch';
 import withDelayedLoading from '../components/hoc/withDelayedLoading';
 import {
     getSectionFetchFunctionFromUrlGetter as getFetchFunction,
