@@ -28,7 +28,7 @@ export const requestToCreateNewAuthenticatedUser = ({ username, password }) =>
             const {
                 data: { request_token }
             } = await axios.get(NEW_REQUEST_TOKEN);
-
+            console.log("auth.js data: "+data);
             await axios.post(VALIDATE_TOKEN_WITH_LOGIN, { request_token, username, password });
 
             const {
