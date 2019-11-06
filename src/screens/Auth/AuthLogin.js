@@ -9,7 +9,7 @@ import { REQUEST_PASSWORD_URL } from '../../api/urls';
 import { safeOpenURL } from '../../utils/network';
 import RouteNames from '../../RouteNames';
 import Theme from '../../Theme';
-
+//default authlogin
 class AuthLogin extends React.Component {
     static navigationOptions = () => ({
         title: 'Log In'
