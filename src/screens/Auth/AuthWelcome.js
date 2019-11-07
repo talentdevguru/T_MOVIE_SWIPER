@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   },
   welcomeCaption: {
     color: Theme.gray.lighter,
-    textAlign: 'center'ß
+    textAlign: 'center'
   },
   guestButton: {
     height: 48,
