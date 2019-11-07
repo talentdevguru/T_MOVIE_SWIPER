@@ -78,7 +78,7 @@ class AuthWelcome extends React.Component {
         </View>
         <View style={styles.buttonContainer}>
           <AppButton
-            solid
+            solid 
             toScale={false}
             style={styles.button}
             textStyle={styles.buttonText}
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   },
   welcomeCaption: {
     color: Theme.gray.lighter,
-    textAlign: 'center'
+    textAlign: 'center'ß
   },
   guestButton: {
     height: 48,
