@@ -78,7 +78,7 @@ class AuthLogin extends React.Component {
                         Forgot the password?
                     </AppButton>
                 </ScrollView>
-
+b
                 <AppToast refProp={this.onToastRef} />
                 <PageSpinner visible={loginIsLoading} />
             </View>
