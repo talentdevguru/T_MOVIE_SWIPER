@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   welcomeText: {
     textAlign: 'center'
   }, 
-  fff
+  
   welcomeCaption: {
     color: Theme.gray.lighter,
     textAlign: 'center'
