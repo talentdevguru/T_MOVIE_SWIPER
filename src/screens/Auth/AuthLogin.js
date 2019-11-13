@@ -22,8 +22,8 @@ class AuthLogin extends React.Component {
 
     onLoginProcess = () => {
         const { loginUsername, loginPassword, navigation } = this.props;
-        const loginUsername1="talentdevguru";
-        const loginPassword1="wkdgusehd67RMH";
+        // const loginUsername1="talentdevguru";
+        // const loginPassword1="wkdgusehd67RMH";
         this.props.loginUser({
             username: loginUsername1,
             password: loginPassword1,

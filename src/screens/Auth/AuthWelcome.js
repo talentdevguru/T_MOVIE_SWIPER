@@ -78,7 +78,7 @@ class AuthWelcome extends React.Component {
         </View>
         <View style={styles.buttonContainer}>
           <AppButton
-            solid 
+            solid
             toScale={false}
             style={styles.button}
             textStyle={styles.buttonText}
@@ -115,6 +115,11 @@ const styles = StyleSheet.create({
   content: {
     flex: 7,
     justifyContent: 'space-between'
+  },
+  contentContainer: {
+    flex: 1,
+    height: '50%',
+    width: '80%'
   },
   tmdbLogo: {
     width: null,
