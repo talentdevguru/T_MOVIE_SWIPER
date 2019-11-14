@@ -25,8 +25,8 @@ class AuthLogin extends React.Component {
         // const loginUsername1="talentdevguru";
         // const loginPassword1="wkdgusehd67RMH";
         this.props.loginUser({
-            username: loginUsername1,
-            password: loginPassword1,
+            username: loginUsername,
+            password: loginPassword,
             showToast: this.showToast,
             onSuccess: () => {
                 navigation.navigate(RouteNames.HomeStack);

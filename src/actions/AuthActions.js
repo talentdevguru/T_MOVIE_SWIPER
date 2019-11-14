@@ -23,7 +23,7 @@ export const createGuestSession = ({ showToast, onSuccess }) => async dispatch =
 
   try {
     const { sessionId } = await requestToCreateNewGuestUser();
-
+    
     dispatch({ type: Auth.CREATE_GUEST_SESSION_SUCCESS, payload: createUser({ sessionId }) });
     onSuccess();
   } catch (error) {
