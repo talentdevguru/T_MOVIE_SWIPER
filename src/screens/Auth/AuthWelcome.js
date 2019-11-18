@@ -45,7 +45,7 @@ class AuthWelcome extends React.Component {
   showToast = message => this.toast.show(message, 2000);
 
   render() {
-      
+    //define const isGuestSessionCreating  
     const { isGuestSessionCreating } = this.props;
     
     return (
@@ -62,6 +62,7 @@ class AuthWelcome extends React.Component {
             <AppText style={styles.welcomeText} type="title1">
               Welcome to MovieSwiper
             </AppText>
+    
             <AppText style={styles.welcomeCaption} type="titleCaption">
               Powered by The Movie Database
             </AppText>
