@@ -45,7 +45,7 @@ class AuthWelcome extends React.Component {
   showToast = message => this.toast.show(message, 2000);
 
   render() {
-    //define const isGuestSessionCreating  
+    
     const { isGuestSessionCreating } = this.props;
     
     return (
