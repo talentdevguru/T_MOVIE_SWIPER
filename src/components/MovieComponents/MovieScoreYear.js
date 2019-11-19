@@ -22,6 +22,9 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row'
   },
+  scoreContainer: {
+    flexDirection: 'row'
+  },
   score: {
     marginRight: Theme.spacing.tiny
   },
