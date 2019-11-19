@@ -13,6 +13,7 @@ class MovieScoreYear extends React.Component {
       <View style={[styles.container, style]}>
         <MovieUserScore style={styles.score} movie={movie} />
         <AppText style={styles.year}>{movie.year}</AppText>
+        <MovieUserScore style={styles.score} movie={movie} />
       </View>
     );
   }
