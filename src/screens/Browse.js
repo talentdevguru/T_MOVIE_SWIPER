@@ -143,13 +143,6 @@ class Browse extends React.Component {
                     onDelayedInput={this.onDelayedInput}
                 />
 
-                <SearchBlock 
-                    value={searchText}
-                    style={styles.search}
-                    inputRef={this.onSearchTextInputRef}
-                    onSearchBlockBlur={this.onSearchBlockBlur}
-                />
-
                 <View style={styles.bottomContainer} {...this.panResponder.panHandlers}>
                     {this.renderBrowseSections()}
                     {isSearchBlockFocused && (
