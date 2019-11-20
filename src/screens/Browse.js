@@ -149,7 +149,6 @@ class Browse extends React.Component {
                     inputRef={this.onSearchTextInputRef}
                     onSearchBlockBlur={this.onSearchBlockBlur}
                     onSearchBlockFocus={this.onSearchBlockFocus}
-                    onChangeText={this.onChangeText}
                 />
 
                 <View style={styles.bottomContainer} {...this.panResponder.panHandlers}>
