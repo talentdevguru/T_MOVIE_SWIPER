@@ -35,5 +35,13 @@ class Library extends React.Component {
         })
     }
 
+    onFavoritesPressed = () => {
+        const { navigation } = this.props;
+        navigation.navigate(RouteNames.MovieListScreen, {
+            title: 'Favorite Movies',
+            fetchFunction: fetchFavoriteMovies
+        })
+    }
+
     
 }
