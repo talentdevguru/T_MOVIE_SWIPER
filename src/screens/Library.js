@@ -70,3 +70,13 @@ class Library extends React.Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: Theme.colors.background
+    },
+    button: {
+        height: 64
+    }
+})
