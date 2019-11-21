@@ -80,3 +80,10 @@ const styles = StyleSheet.create({
         height: 64
     }
 })
+
+const mapStateToProps = ({ auth: { user } }) => ({ user });
+
+export default connect(
+    mapStateToProps,
+    {}
+)(withDelayedLoading(Library));
