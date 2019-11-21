@@ -43,5 +43,30 @@ class Library extends React.Component {
         })
     }
 
-    
+    render() {
+        const { user } = this.props;
+
+        return (
+            <View style={styles.container}>
+                {user.isGuest ? (
+                    <GuestInfo />
+                ) : (
+                    <View>
+                        <BlockButton
+                            style={styles.button}
+                            Icon={getLibraryWatchlistIcon()}
+                            text="My Watchlist"
+                            onPress={this.onWatchlistPressed}
+                            />
+                        <BlockButton
+                            style={styles.button}
+                            Icon={getLibraryFavoriteIcon()}
+                            text="My Favorite Movies"
+                            onPress={this.onFavoritesPressed}
+                        />
+                    </View>
+                )}
+            </View>
+        )
+    }
 }
