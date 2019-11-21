@@ -27,5 +27,7 @@ class Library extends React.Component {
         )
     })
 
-    
+    onWatchListPressed = () => {
+        
+    }
 }
