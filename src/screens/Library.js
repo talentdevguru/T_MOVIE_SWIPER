@@ -28,6 +28,12 @@ class Library extends React.Component {
     })
 
     onWatchListPressed = () => {
-        
+        const { navigation } = this.props;
+        navigation.navigate(RouteNames.MoveListScreen, {
+            title: 'Watchlist',
+            fetchFunction: fetchWatchlistMovies
+        })
     }
+
+    
 }
