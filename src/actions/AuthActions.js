@@ -27,7 +27,7 @@ export const createGuestSession = ({ showToast, onSuccess }) => async dispatch =
     dispatch({ type: Auth.CREATE_GUEST_SESSION_SUCCESS, payload: createUser({ sessionId }) });
     onSuccess();
   } catch (error) {
-    showToast && showToast('Something went wrong. Please try again later.');
+    showToast && showToast('Something went wrong. Please try again later.'+error);
     dispatch({ type: Auth.CREATE_GUEST_SESSION_FAIL });
   }
 };
@@ -68,9 +68,13 @@ export const loginUser = ({ username, password, showToast, onSuccess }) => async
 
 // Local functions
 const createUser = ({ accountId, sessionId, username }) => {
+  console.log("sessionId: "+sessionId);
   const isGuest = !accountId;
+  console.log("isGuest: "+isGuest);
   const user = { isGuest, sessionId, accountId, username };
+  console.log("user username: "+user.username);
   Config.logGeneral && console.log('Creating user: ', user);
   stSaveUser(user);
+  console.log("user sessionId: "+user.sessionId);
   return user;
 };

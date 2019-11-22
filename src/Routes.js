@@ -49,15 +49,17 @@ const BottomTabs = createBottomTabNavigator(
     {
         [TabNames.browse]: {
             screen: createDefaultStackNavigator({
-                Browse
+                Browse,
+                [RouteNames.MovieListScreen]: MoviesListScreen,
+                [RouteNames.MovieDetailsScreen]: MovieDetailsScreen
             })
         },
-        [TabNames.browse]: {
+        [TabNames.explore]: {
             screen: createDefaultStackNavigator({
                 Browse
             })
         },
-        [TabNames.browse]: {
+        [TabNames.library]: {
             screen: createDefaultStackNavigator({
                 Browse
             })
@@ -115,6 +117,6 @@ export const RootStack = createAppContainer(
     createSwitchNavigator({
         [RouteNames.Splash]: { screen: Splash },
         [RouteNames.AuthStack]: { screen: AuthStack },
-        [RouteNames.HomeStack]: { screen: HomeStack }
+        [RouteNames.HomeStack]: { screen: HomeStack },
     })
 );
