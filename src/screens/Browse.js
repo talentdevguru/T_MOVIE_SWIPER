@@ -84,7 +84,7 @@ class Browse extends React.Component {
             refetch: { fetchUntilSuccess }
         } = this.props;
 
-        BROWSE_SECTIONS.forEach(sectioin =>
+        BROWSE_SECTIONS.forEach(section =>
             fetchUntilSuccess(() => section.fetchFunction({ page: 1})).then(data => {
                 const { sectionsMovies } = this.state;
                 const newSections = {

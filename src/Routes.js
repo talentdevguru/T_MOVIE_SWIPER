@@ -50,8 +50,8 @@ const BottomTabs = createBottomTabNavigator(
         [TabNames.browse]: {
             screen: createDefaultStackNavigator({
                 Browse,
-                [RouteNames.MovieListScreen]: MoviesListScreen,
-                [RouteNames.MovieDetailsScreen]: MovieDetailsScreen
+                // [RouteNames.MovieListScreen]: MoviesListScreen,
+                // [RouteNames.MovieDetailsScreen]: MovieDetailsScreen
             })
         },
         [TabNames.explore]: {
