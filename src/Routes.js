@@ -13,6 +13,7 @@ import AuthLogin from './screens/Auth/AuthLogin';
 import Browse from './screens/Browse';
 // import Explore from './screens/Explore';
 // import Library from './screens/Library';
+import MovieListScreen from './screens/Movie/MoviesListScreen';
 
 import Header from './components/Header';
 import NavbarWrapper from './components/NavbarWrapper';
@@ -50,7 +51,7 @@ const BottomTabs = createBottomTabNavigator(
         [TabNames.browse]: {
             screen: createDefaultStackNavigator({
                 Browse,
-                // [RouteNames.MovieListScreen]: MoviesListScreen,
+                [RouteNames.MovieListScreen]: MoviesListScreen,
                 // [RouteNames.MovieDetailsScreen]: MovieDetailsScreen
             })
         },
