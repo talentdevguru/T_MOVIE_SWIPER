@@ -11,8 +11,8 @@ import Splash from './screens/Splash';
 import AuthWelcome from './screens/Auth/AuthWelcome';
 import AuthLogin from './screens/Auth/AuthLogin';
 import Browse from './screens/Browse';
-import Explore from './screens/Explore';
-import Library from './screens/Library';
+// import Explore from './screens/Explore';
+// import Library from './screens/Library';
 
 import Header from './components/Header';
 import NavbarWrapper from './components/NavbarWrapper';
@@ -52,12 +52,12 @@ const BottomTabs = createBottomTabNavigator(
                 Browse
             })
         },
-        [TabNames.explore]: {
+        [TabNames.browse]: {
             screen: createDefaultStackNavigator({
                 Browse
             })
         },
-        [TabNames.library]: {
+        [TabNames.browse]: {
             screen: createDefaultStackNavigator({
                 Browse
             })
@@ -83,10 +83,10 @@ const BottomTabs = createBottomTabNavigator(
                 switch (routeName) {
                     case TabNames.browse:
                         return getNavbarBrowseIcon({ tintColor });
-                    case TabNames.explore:
-                        return getNavbarExploreIcon({ tintColor });
-                    case TabNames.library:
-                        return getNavbarLibraryIcon({ tintColor });
+                    case TabNames.browse:
+                        return getNavbarBrowseIcon({ tintColor });
+                    case TabNames.browse:
+                        return getNavbarBrowseIcon({ tintColor });
                     default:
                         return null;
                 }

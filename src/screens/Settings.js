@@ -6,3 +6,10 @@ import { AppText } from '../components/common';
 import BlockButton from '../components/BlockButton';
 import withDelayedLoading from '../components/hoc/withDelayedLoading';
 import Theme from '../Theme';
+
+class Settings extends React.Component {
+    onSignoutPress = () => {
+        const { navigation, logOutUser } = this.props;
+        logOutUser(navigation);
+    }  
+}
