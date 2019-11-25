@@ -65,7 +65,7 @@ class MovieDetailsScreen extends React.Component {
 
         navigation.setParams({ headerOpacity });
     }
-
+//define
     render() {
         const { navigation } = this.props;
         const { yScrollOffset } = this.state;
