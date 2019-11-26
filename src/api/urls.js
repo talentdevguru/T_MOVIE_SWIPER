@@ -11,7 +11,7 @@ export const NEW_GUEST_SESSION = withKey('/authentication/guest_session/new');
 export const NEW_REQUEST_TOKEN = withKey('/authentication/token/new');
 export const VALIDATE_TOKEN_WITH_LOGIN = withKey('/authentication/token/validate_with_login');
 export const ACCOUNT_DETAILS = withKey('/account');
-
+/xAtX7VmwbFNq5xf0r7zdXsqYS90.jpg
 // Images
 const BASE_IMAGE_URL = 'https://image.tmdb.org/t/p/';
 export const getW45ImageUrl = imagePath => `${BASE_IMAGE_URL}w45${imagePath}`;
