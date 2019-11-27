@@ -19,7 +19,7 @@ class MoviesListScreen extends React.Component {
         )
     }
 }
-
+sss
 const styles = StyleSheet.create({
     container: {
         flex: 1,
