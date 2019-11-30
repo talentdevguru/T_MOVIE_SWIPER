@@ -26,6 +26,7 @@ export const createGuestSession = ({ showToast, onSuccess }) => async dispatch =
     
     dispatch({ type: Auth.CREATE_GUEST_SESSION_SUCCESS, payload: createUser({ sessionId }) });
     onSuccess();
+    dispatch
   } catch (error) {
     showToast && showToast('Something went wrong. Please try again later.'+error);
     dispatch({ type: Auth.CREATE_GUEST_SESSION_FAIL });
