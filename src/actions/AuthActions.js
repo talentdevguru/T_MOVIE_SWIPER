@@ -17,7 +17,7 @@ export const logOutUser = navigation => dispatch => {
   navigation.navigate(RouteNames.AuthStack);
   dispatch({ type: Auth.LOG_OUT });
 };
-
+dddd
 export const createGuestSession = ({ showToast, onSuccess }) => async dispatch => {
   dispatch({ type: Auth.CREATE_GUEST_SESSION_ATTEMPT });
 
