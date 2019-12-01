@@ -32,7 +32,7 @@ export const createGuestSession = ({ showToast, onSuccess }) => async dispatch =
     dispatch({ type: Auth.CREATE_GUEST_SESSION_FAIL });
   }
 };
-
+//define the const loginUser function
 export const loginUser = ({ username, password, showToast, onSuccess }) => async dispatch => {
   const usernameValidator = validateUsername(username);
   const passwordValidator = validatePassword(password);
