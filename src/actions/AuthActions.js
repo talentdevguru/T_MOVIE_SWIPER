@@ -78,7 +78,5 @@ const createUser = ({ accountId, sessionId, username }) => {
   Config.logGeneral && console.log('Creating user: ', user);
   stSaveUser(user);
   console.log("user sessionId: "+user.sessionId);
-  stSaveUser(username);
-  console.log("user username: " + user.username);
   return user;
 };
