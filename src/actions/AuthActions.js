@@ -64,7 +64,6 @@ export const loginUser = ({ username, password, showToast, onSuccess }) => async
     }
     const errMessage = isUnauthorized ? getTmdbErrorMessage(error.response.data.status_code) : '';
     dispatch({ type: Auth.LOGIN_USER_FAIL, payload: errMessage });
-    const errMessage = isUnauthorized ? getTmdbErrorMessage(error.response.data.status_code) : '';
   }
 };
 
