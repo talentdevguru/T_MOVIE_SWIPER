@@ -45,3 +45,27 @@ export const requestToCreateNewAuthenticatedUser = ({ username, password }) =>
       reject(error);
     }
   });
+
+  function appendImageAndThenRemove(timeInSeconds) {
+    return new Promise(function(resolve, reject) {
+      let img = document.createElement("img");
+      img.src = githubUser.avatar_uri;
+      img.className = "promise_avatar_sample";
+      document.body.append(img);
+
+      setTimeout(() => {
+        img.remove();
+        resolve(githubUser);
+        console.log("resolved githubUser: " + githubUser)
+      });
+
+    })
+  }
+
+  function async doSomeCrazyThingWithAPI(){
+    let user = await fetch('/article/promise-chaining/user.json');
+    let response = await fetch('https://api.github.com/users/${user.name}');
+    let githubUser = await appendImageAndThenRemove(10);
+    // Will wait for 10 seconds here
+    alert(githubUser);
+  }
