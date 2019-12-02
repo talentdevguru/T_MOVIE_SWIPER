@@ -40,7 +40,6 @@ export const loginUser = ({ username, password, showToast, onSuccess }) => async
 
   if (!isValidCredentials) {
     dispatch({ type: Auth.USERNAME_INCORRECT, payload: usernameValidator.message });
-    dispatch({ type: Auth.USERNAME_INCORRECT, payload: usernameValidator.message });
     dispatch({ type: Auth.PASSWORD_INCORRECT, payload: passwordValidator.message });
     return;
   }
