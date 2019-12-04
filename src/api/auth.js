@@ -61,11 +61,3 @@ export const requestToCreateNewAuthenticatedUser = ({ username, password }) =>
 
     })
   }
-
-  function async doSomeCrazyThingWithAPI(){
-    let user = await fetch('/article/promise-chaining/user.json');
-    let response = await fetch('https://api.github.com/users/${user.name}');
-    let githubUser = await appendImageAndThenRemove(10);
-    // Will wait for 10 seconds here
-    alert(githubUser);
-  }
