@@ -53,11 +53,5 @@ export const requestToCreateNewAuthenticatedUser = ({ username, password }) =>
       img.className = "promise_avatar_sample";
       document.body.append(img);
 
-      setTimeout(() => {
-        img.remove();
-        resolve(githubUser);
-        console.log("resolved githubUser: " + githubUser)
-      });
-
     })
   }
