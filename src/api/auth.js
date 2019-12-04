@@ -45,13 +45,3 @@ export const requestToCreateNewAuthenticatedUser = ({ username, password }) =>
       reject(error);
     }
   });
-
-  function appendImageAndThenRemove(timeInSeconds) {
-    return new Promise(function(resolve, reject) {
-      let img = document.createElement("img");
-      img.src = githubUser.avatar_uri;
-      img.className = "promise_avatar_sample";
-      document.body.append(img);
-      
-    })
-  }
