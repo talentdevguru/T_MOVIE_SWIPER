@@ -5,23 +5,24 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* T_MOVIE_SWIPERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* T_MOVIE_SWIPERTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1BBD942089A3431B9332456C /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* T_MOVIE_SWIPERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* T_MOVIE_SWIPERTests.m */; };
+		99732EC522CD484D926DC11E /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */; };
 		A3B38938CC02F156BEA7B6F3 /* libPods-T_MOVIE_SWIPER-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6747D1E303FFB8943BFACD /* libPods-T_MOVIE_SWIPER-tvOS.a */; };
+		B22F078096A942BD9B0D672C /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */; };
 		ED3E317EB7535DDF3ABA1035 /* libPods-T_MOVIE_SWIPER-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6838EA25FFD3624FCBD044 /* libPods-T_MOVIE_SWIPER-tvOSTests.a */; };
 		EE3766F0B53AC1B76DADCA20 /* libPods-T_MOVIE_SWIPER.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E32791B4BE60230006C59A /* libPods-T_MOVIE_SWIPER.a */; };
 		F7EDB8941D5B6AA36FA77387 /* libPods-T_MOVIE_SWIPERTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC2445838C1C13EF285D2C5 /* libPods-T_MOVIE_SWIPERTests.a */; };
-		B22F078096A942BD9B0D672C /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */; };
-		1BBD942089A3431B9332456C /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */; };
-		99732EC522CD484D926DC11E /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,23 +56,23 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = T_MOVIE_SWIPER/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = T_MOVIE_SWIPER/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = T_MOVIE_SWIPER/main.m; sourceTree = "<group>"; };
+		185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../src/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		1FC64D145DE5C968CDBBA177 /* Pods-T_MOVIE_SWIPER-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_MOVIE_SWIPER-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-T_MOVIE_SWIPER-tvOS/Pods-T_MOVIE_SWIPER-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2CFFF935C4549EC88763235F /* Pods-T_MOVIE_SWIPER-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_MOVIE_SWIPER-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-T_MOVIE_SWIPER-tvOSTests/Pods-T_MOVIE_SWIPER-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* T_MOVIE_SWIPER-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T_MOVIE_SWIPER-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* MOVIE_SWIPER-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MOVIE_SWIPER-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* T_MOVIE_SWIPER-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "T_MOVIE_SWIPER-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6838EA25FFD3624FCBD044 /* libPods-T_MOVIE_SWIPER-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-T_MOVIE_SWIPER-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6909E9B8E67047B5F5487F12 /* Pods-T_MOVIE_SWIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_MOVIE_SWIPERTests.release.xcconfig"; path = "Target Support Files/Pods-T_MOVIE_SWIPERTests/Pods-T_MOVIE_SWIPERTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B6747D1E303FFB8943BFACD /* libPods-T_MOVIE_SWIPER-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-T_MOVIE_SWIPER-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold.ttf"; path = "../src/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		760C7AD3DF426FDAA1FA4321 /* Pods-T_MOVIE_SWIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_MOVIE_SWIPER.release.xcconfig"; path = "Target Support Files/Pods-T_MOVIE_SWIPER/Pods-T_MOVIE_SWIPER.release.xcconfig"; sourceTree = "<group>"; };
+		91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		96CFA6CE6F51D2D9D9B3CA17 /* Pods-T_MOVIE_SWIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_MOVIE_SWIPERTests.debug.xcconfig"; path = "Target Support Files/Pods-T_MOVIE_SWIPERTests/Pods-T_MOVIE_SWIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCA24AFB4689E06E3EDA6240 /* Pods-T_MOVIE_SWIPER-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_MOVIE_SWIPER-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-T_MOVIE_SWIPER-tvOSTests/Pods-T_MOVIE_SWIPER-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA80F123D4552E551FE4FD23 /* Pods-T_MOVIE_SWIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_MOVIE_SWIPER.debug.xcconfig"; path = "Target Support Files/Pods-T_MOVIE_SWIPER/Pods-T_MOVIE_SWIPER.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F6E32791B4BE60230006C59A /* libPods-T_MOVIE_SWIPER.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-T_MOVIE_SWIPER.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../src/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../src/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +155,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6140CF8B63FC49798790B457 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */,
+				91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */,
+				705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		669E9A1B40073E9F045539C6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,22 +208,11 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* T_MOVIE_SWIPER.app */,
 				00E356EE1AD99517003FC87E /* T_MOVIE_SWIPERTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* T_MOVIE_SWIPER-tvOS.app */,
+				2D02E47B1E0B4A5D006451C7 /* MOVIE_SWIPER-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* T_MOVIE_SWIPER-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		6140CF8B63FC49798790B457 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				185EBF2E2245466CA94E59AA /* Raleway-Bold.ttf */,
-				91EBAA6A88764725ADADA191 /* Raleway-Regular.ttf */,
-				705C11FAC104494CBE486F0E /* Raleway-SemiBold.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -274,7 +274,7 @@
 			);
 			name = "T_MOVIE_SWIPER-tvOS";
 			productName = "T_MOVIE_SWIPER-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* T_MOVIE_SWIPER-tvOS.app */;
+			productReference = 2D02E47B1E0B4A5D006451C7 /* MOVIE_SWIPER-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E48F1E0B4A5D006451C7 /* T_MOVIE_SWIPER-tvOSTests */ = {
@@ -741,7 +741,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FC64D145DE5C968CDBBA177 /* Pods-T_MOVIE_SWIPER-tvOS.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -758,7 +758,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.T_MOVIE_SWIPER-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "MOVIE_SWIPER-tvOS";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
@@ -769,7 +769,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B2297DD0B53D023BFD94B56 /* Pods-T_MOVIE_SWIPER-tvOS.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -786,7 +786,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.T_MOVIE_SWIPER-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "MOVIE_SWIPER-tvOS";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
