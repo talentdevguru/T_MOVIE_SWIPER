@@ -120,6 +120,7 @@ class Browse extends React.Component {
                 renderItem={this.renderMoviesScrollSection}
                 showsVerticalScrollIndicator={false}
             />
+
         );
     }
 
