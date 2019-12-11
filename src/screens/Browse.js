@@ -40,7 +40,8 @@ class Browse extends React.Component {
             isSearchBlockFocused: false,
             searchResultsFetchFunction: getSearchFetchFunctionFromQuery(''),
             searchText: '',
-            sectionsMovies
+            sectionsMovies,
+            searchText
         };
 
         this.createKeyboardDismissResponder();
