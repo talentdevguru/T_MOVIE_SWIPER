@@ -18,6 +18,7 @@ import {
     getTopRatedMoviesUrl
 } from '../api/urls';
 import Theme from '../Theme';
+import Animated from 'react-native-reanimated';
 
 const BROWSE_SECTIONS = [
     { title: 'Trending Daily', fetchFunction: getFetchFunction(getTrendingDailyMoviesUrl) },
@@ -91,6 +92,17 @@ class Browse extends React.Component {
                     ...sectionsMovies,
                     [section.title]: data.movies
                 };
+                
+                if (isFolded) {
+                    this.setState({ isFolded: !isFolded });
+                    Animated.timing(detailsVisibleAnimatedValue, {
+
+                    }).start(() => {
+                        this.isAnimating = false;
+                    })
+                } else {
+                    
+                }
 
                 this.setState({ sectionsMovies: newSections });
             })
