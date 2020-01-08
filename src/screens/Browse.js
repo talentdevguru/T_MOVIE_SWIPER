@@ -12,7 +12,7 @@ import {
     getSearchFetchFunctionFromQuery
 } from '../api/movies';
 import {
-    getTrendingDailyMoviesUrl,
+    getTrendingDailyMoviesUrl, 
     getTrendingWeeklyMoviesUrl,
     getPopularMoviesUrl,
     getTopRatedMoviesUrl
